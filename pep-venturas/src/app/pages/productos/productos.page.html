@@ -1,0 +1,53 @@
+<ion-content class="ion-padding">
+  <div class="product-container">
+    <div class="product-card-wrapper">
+      <!-- Título -->
+      <ion-card class="product-card no-shadow">
+        <ion-card-header class="product-header">
+          <ion-card-title class="text-center">Productos</ion-card-title>
+        </ion-card-header>
+
+        <!-- Barra de búsqueda -->
+        <ion-card-content>
+          <ion-searchbar
+            [(ngModel)]="searchTerm"
+            placeholder="Buscar productos..."
+            class="custom-searchbar"
+            animated
+            showClearButton="focus"
+          ></ion-searchbar>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Productos -->
+      <ion-card
+        *ngFor="let producto of productosFiltrados"
+        class="product-card"
+      >
+        <img
+          [src]="producto.image_url"
+          alt="Imagen del producto"
+          class="product-image"
+        />
+
+        <ion-card-header class="product-header">
+          <ion-card-title>{{ producto.name }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="product-description">
+            {{ producto.description | slice: 0:180 }}...
+          </p>
+          <ion-button
+            class="ver-mas-btn"
+            expand="block"
+            (click)="verMas(producto)"
+          >
+            <ion-icon slot="start" name="information-circle-outline"></ion-icon>
+            Ver más
+          </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true" class="ion-padding login-dark">
+  <div class="login-container">
+    <h2 class="text-center">Restablecer Clave</h2>
+
+    <!-- Card para el formulario de restablecer contraseña -->
+    <ion-card class="login-card">
+      <form [formGroup]="resetForm" (ngSubmit)="resetPassword()">
+        <!-- Correo -->
+        <ion-item lines="full" class="ion-no-padding">
+          <ion-label position="stacked" class="ion-no-padding">Correo</ion-label>
+          <ion-input formControlName="email" type="email" required></ion-input>
+        </ion-item>
+
+        <!-- Botón Restablecer -->
+        <ion-button expand="block" type="submit" [disabled]="resetForm.invalid">
+          Restablecer Contraseña
+        </ion-button>
+      </form>
+
+      <!-- Acciones secundarias -->
+      <div class="text-center acciones-secundarias">
+        <ion-button fill="clear" size="small" (click)="backToLogin()" class="back-to-login">
+          Volver al Login
+        </ion-button>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

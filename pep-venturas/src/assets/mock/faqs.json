@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "¿Con qué frecuencia debo llevar a mi mascota al veterinario?",
+    "answer": "Se recomienda al menos una vez al año para un chequeo general, aunque los cachorros y animales mayores pueden necesitar visitas más frecuentes."
+  },
+  {
+    "id": 2,
+    "question": "¿Mi mascota necesita vacunas?",
+    "answer": "Sí, todas las mascotas deben recibir vacunas básicas para prevenir enfermedades graves como la rabia, moquillo y parvovirus."
+  },
+  {
+    "id": 3,
+    "question": "¿Qué alimentos están prohibidos para los perros?",
+    "answer": "Chocolate, cebolla, ajo, uvas y productos con xilitol son altamente tóxicos para los perros."
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo sé si mi mascota tiene parásitos?",
+    "answer": "Algunos síntomas incluyen vómito, diarrea, picazón, pérdida de peso o lombrices visibles en heces. Visita al veterinario para un diagnóstico."
+  },
+  {
+    "id": 5,
+    "question": "¿Es necesario esterilizar o castrar a mi mascota?",
+    "answer": "Sí, esto ayuda a controlar la sobrepoblación, previene ciertas enfermedades y mejora el comportamiento."
+  }
+]

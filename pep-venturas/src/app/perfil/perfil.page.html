@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/citas"  color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="text-center">Perfil de usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="contact-container">
+    <ion-card class="contact-card">
+      <ion-card-header>
+        <div class="profile-header">
+          <img src="assets/avatar.png" alt="Avatar" class="avatar" />
+          <ion-card-title>{{ user?.name }}</ion-card-title>
+          <ion-card-subtitle>{{ user?.email }}</ion-card-subtitle>
+        </div>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-label>Nombre</ion-label>
+          <ion-text>{{ user?.name }}</ion-text>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>Email</ion-label>
+          <ion-text>{{ user?.email }}</ion-text>
+        </ion-item>
+
+        <!-- Botones opcionales -->
+        <div class="actions">
+          <ion-button expand="block" class="animated-btn" color="primary">Editar Perfil</ion-button>
+          <ion-button expand="block" class="animated-btn" color="medium">Cambiar Contraseña</ion-button>
+          <ion-button expand="block" class="animated-btn" color="danger" (onclick)="volver()">Regresar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,83 @@
+:host {
+  ion-content {
+    --background: var(--ion-background-color, #121212);
+  }
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--ion-background-color, #121212);
+  padding: 0 1rem; // menos padding horizontal
+  min-height: 100vh;
+}
+
+.product-card-wrapper {
+  width: 100%;
+  max-width: 100%; // ocupan todo el ancho disponible
+  padding: 0; // quitar padding lateral adicional
+}
+
+// Card general
+.product-card {
+  width: 100%;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+// Encabezado
+.product-header {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 16px 16px 0 0;
+}
+
+.product-header ion-card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+// Imagen
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+// Descripción
+.product-description {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+// Botón
+.ver-mas-btn {
+  margin: 0 1rem 1rem 1rem;
+  --background: var(--ion-color-primary, #3880ff);
+  --color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+// Buscador
+.custom-searchbar {
+  --background: #1e1e1e;
+  --color: #ffffff;
+  --placeholder-color: #999999;
+  --icon-color: #999999;
+  --clear-button-color: #ffffff;
+  border: 1px solid #333;
+  border-radius: 12px;
+  margin: 1rem;
+}

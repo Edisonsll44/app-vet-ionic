@@ -1,0 +1,12 @@
+<ion-content *ngIf="blog" class="detail-container">
+  <ion-card class="detail-card">
+    <img [src]="blog.image" />
+    <ion-card-header>
+      <ion-card-title>{{ blog.title }}</ion-card-title>
+      <ion-card-subtitle>{{ blog.author }} - {{ blog.date }}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ blog.content }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

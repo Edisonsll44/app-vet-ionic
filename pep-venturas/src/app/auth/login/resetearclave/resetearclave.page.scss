@@ -1,0 +1,74 @@
+/* Fondo y contenedores del restablecimiento */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: #121212; /* Fondo completamente oscuro */
+  color: white;
+}
+
+/* Card de restablecimiento */
+.login-card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #1c1c1c; /* Fondo oscuro sin blancos */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Sombras para mayor contraste */
+  color: white;
+}
+
+/* Estilo para los botones de acción */
+ion-button {
+  --border-radius: 8px;
+  width: 100%; /* ¡Clave para igualar tamaño! */
+  margin-top: 10px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  --box-shadow: none;
+}
+
+/* Botón Restablecer Contraseña */
+ion-button[type='submit'] {
+  --background: #2ecc71; /* Verde para el botón "Restablecer Contraseña" */
+  --color: white;
+}
+
+/* Botón Volver al Login */
+.back-to-login {
+  --background: transparent;
+  --color: #ffffff;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+/* Estilos de los campos de input (solo líneas) */
+ion-item {
+  --background: transparent;
+  --border-color: #333; /* Línea gris para los bordes */
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+ion-item .input-wrapper {
+  --background: transparent;
+  border-bottom: 2px solid #888; /* Línea visible debajo del input */
+}
+
+ion-label {
+  --color: white; /* Etiquetas blancas */
+}
+
+/* Inputs y labels */
+ion-input {
+  --background: transparent;
+  --color: white;
+  --placeholder-color: #999;
+}
+
+ion-item .input-wrapper {
+  border-bottom: 2px solid #444; /* Líneas simples debajo de cada campo */
+}
+
+ion-label {
+  --padding-bottom: 4px; /* Mantener el label cerca del input */
+}

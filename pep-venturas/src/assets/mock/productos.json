@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Royal Canin Veterinary Diet Urinary SO",
+    "price": "$40.99",
+    "description": "Alimento seco para perros con problemas urinarios.",
+    "category": "Alimentos",
+    "image_url": "https://petsec.vteximg.com.br/arquivos/ids/156760-400-400/PS2162-PS2504.png?v=638088988719030000"
+  },
+  {
+    "id": 2,
+    "name": "Hills Prescription Diet c/d Urinary Care",
+    "price": "$45.50",
+    "description": "Comida seca para perros con problemas urinarios.",
+    "category": "Alimentos",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQVhSxiQ2ZMgJNgd5-VN1z9_6swnpRiNGImtE7xh-0ag&s&ec=72940545"
+  },
+  {
+    "id": 3,
+    "name": "Frontline Plus para Perros",
+    "price": "$20.00",
+    "description": "Antiparasitario para perros para controlar pulgas y garrapatas.",
+    "category": "Antiparasitarios",
+    "image_url": "https://sagrisa.com/storage/products/June2022/I6vKWQkbDTmaDdrNt2ok.webp"
+  },
+  {
+    "id": 4,
+    "name": "Bravecto para Perros",
+    "price": "$55.00",
+    "description": "Tratamiento antiparasitario de larga duración para perros.",
+    "category": "Antiparasitarios",
+    "image_url": "https://www.amiscot.com/wp-content/uploads/2020/12/Bravecto-Tabletas.webp"
+  },
+  {
+    "id": 5,
+    "name": "Advantage 2 para Gatos",
+    "price": "$25.00",
+    "description": "Solución tópica para el control de pulgas en gatos.",
+    "category": "Antiparasitarios",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKEF-klDDgkFq52qL0gGLJKABMCfGI3IuoGsbQL2EgdA&s&ec=72940545"
+  },
+  {
+    "id": 6,
+    "name": "VetIQ Calming Soft Chews para Perros",
+    "price": "$16.99",
+    "description": "Chicles calmantes para perros con ansiedad.",
+    "category": "Suplementos",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMCM_gyOPSgHZQ9w2g2OObfn8_yqUSZrui8MhLuxWLrw&s&ec=72940545"
+  },
+  {
+    "id": 7,
+    "name": "PetSafe Drinkwell Platinum Fontana",
+    "price": "$70.00",
+    "description": "Fuente de agua para gatos y perros.",
+    "category": "Accesorios",
+    "image_url": "https://m.media-amazon.com/images/I/81hOfWMFXXL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Feliway Classic Diffuser para Gatos",
+    "price": "$32.00",
+    "description": "Difusor para reducir el estrés y la ansiedad en gatos.",
+    "category": "Accesorios",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAKid9gW_9_x95xKfeYGEc0Dcm55nrEM3kYH5bKJzqzQ&s&ec=72940545"
+  },
+  {
+    "id": 9,
+    "name": "Vet’s Best Ear Relief Wash para Perros y Gatos",
+    "price": "$12.99",
+    "description": "Limpieza de oídos para perros y gatos.",
+    "category": "Cuidado",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-bcTb7gALyF1EX0t4qW-3byZtnhaCUlBT_id1jGIxg&s&ec=72940545"
+  },
+  {
+    "id": 10,
+    "name": "Pedigree Cuidado Dental para Perros",
+    "price": "$18.00",
+    "description": "Snacks dentales para perros que ayudan a limpiar sus dientes.",
+    "category": "Snacks",
+    "image_url": "https://www.supermercadosantamaria.com/documents/10180/10504/144552963_G.jpg"
+  }
+]

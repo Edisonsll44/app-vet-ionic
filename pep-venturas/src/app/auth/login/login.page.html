@@ -1,0 +1,65 @@
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="login-wrapper">
+    <div class="ux-message">
+      <h5>¡Bienvenido!</h5>
+      <p>Desde aquí puedes:</p>
+      <ul>
+        <li>🔐 Iniciar sesión si ya tienes una cuenta.</li>
+        <li>📝 Registrarte si eres nuevo.</li>
+        <li>🔁 Recuperar tu contraseña si la olvidaste.</li>
+      </ul>
+    </div>
+
+    <ion-segment [(ngModel)]="currentForm" class="tabs">
+      <ion-segment-button value="login">
+        <ion-label>Login</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="register">
+        <ion-label>Registro</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="recoverPassword">
+        <ion-label>Recuperar</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ng-container [ngSwitch]="currentForm">
+      <form *ngSwitchCase="'login'" [formGroup]="loginForm" (ngSubmit)="login()">
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-button expand="full" type="submit">Ingresar</ion-button>
+      </form>
+
+      <form *ngSwitchCase="'register'" [formGroup]="registerForm" (ngSubmit)="register()">
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar contraseña</ion-label>
+          <ion-input type="password" formControlName="confirmPassword"></ion-input>
+        </ion-item>
+        <ion-button expand="full" type="submit">Registrarse</ion-button>
+        <ion-button expand="full" color="medium" (click)="showLogin()">Volver al Login</ion-button>
+      </form>
+
+      <form *ngSwitchCase="'recoverPassword'" [formGroup]="recoverPasswordForm" (ngSubmit)="recoverPassword()">
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-button expand="full" type="submit">Enviar enlace de recuperación</ion-button>
+        <ion-button expand="full" color="medium" (click)="showLogin()">Volver al Login</ion-button>
+      </form>
+    </ng-container>
+  </div>
+</ion-content>

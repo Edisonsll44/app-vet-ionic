@@ -1,0 +1,7 @@
+{
+  "name": "pep-venturas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

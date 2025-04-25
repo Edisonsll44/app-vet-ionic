@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/citas" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Preguntas Frecuentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="faq-container">
+  <div class="card-container">
+    <ion-card class="faq-card" *ngFor="let faq of faqs">
+      <ion-card-header>
+        <ion-card-title>{{ faq.question }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ faq.answer }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="actions">
+    <ion-button
+      (click)="volverInicio()"
+      color="secondary"
+      class="animated-btn"
+      expand="block">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      Volver a inicio
+    </ion-button>
+  </div>
+</ion-content>

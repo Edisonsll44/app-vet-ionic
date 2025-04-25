@@ -1,0 +1,20 @@
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-top: 10px;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.price:hover {
+  color: #f39c12;
+}

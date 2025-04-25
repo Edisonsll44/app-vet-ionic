@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "cliente": {
+      "nombre": "Carlos Jiménez",
+      "telefono": "0987654321",
+      "email": "ana.torres@mail.com"
+    },
+    "mascota": {
+      "nombre": "Luna",
+      "tipo": "Felino",
+      "edad": "2 años"
+    },
+    "descripcion": "La gata ha dejado de comer y está muy decaída.",
+    "fechaHora": "2025-04-22T10:30:00",
+    "estado": "pendiente"
+  },
+  {
+    "id": 2,
+    "cliente": {
+      "nombre": "Carlos Jiménez",
+      "telefono": "0991234567",
+      "email": "carlos.jimenez@mail.com"
+    },
+    "mascota": {
+      "nombre": "Rocky",
+      "tipo": "Canino",
+      "edad": "5 años"
+    },
+    "descripcion": "Presenta cojera en la pata trasera izquierda.",
+    "fechaHora": "2025-04-24T09:00:00",
+    "estado": "pendiente"
+  },
+  {
+    "id": 3,
+    "cliente": {
+      "nombre": "Carlos Jiménez",
+      "telefono": "0981122334",
+      "email": "lucia.romero@mail.com"
+    },
+    "mascota": {
+      "nombre": "Coco",
+      "tipo": "Ave",
+      "edad": "1 año"
+    },
+    "descripcion": "Ha estado perdiendo muchas plumas últimamente.",
+    "fechaHora": "2025-04-25T11:15:00",
+    "estado": "pendiente"
+  }
+]

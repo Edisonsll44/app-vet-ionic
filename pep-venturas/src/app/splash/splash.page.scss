@@ -1,0 +1,108 @@
+.splash-screen {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #1e1e2f, #3a0ca3, #4361ee, #1e1e2f);
+    background-size: 800% 800%;
+    animation: gradientShift 10s ease infinite;
+    z-index: 0;
+  }
+
+  .logo-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding: 0 16px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      margin-bottom: 24px;
+      animation:
+        circleEntrance 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+        subtlePulse 4s ease-in-out infinite 1.2s;
+      transform: scale(0);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: textSlideUp 0.8s ease-out 0.4s forwards;
+    }
+
+    p {
+      font-size: 16px;
+      opacity: 0;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      animation: textFadeIn 0.8s ease-out 0.8s forwards;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+/* Keyframes */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes circleEntrance {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes textSlideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textFadeIn {
+  to {
+    opacity: 0.8;
+  }
+}

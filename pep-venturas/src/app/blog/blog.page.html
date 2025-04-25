@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/citas"  color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Blog Veterinario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="blog-container">
+  <div class="card-container">
+    <ion-card class="blog-card" *ngFor="let post of blogs">
+      <ion-card-header>
+        <ion-card-title>{{ post.title }}</ion-card-title>
+        <ion-card-subtitle>{{ post.date | date:'longDate' }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        {{ post.content }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="actions">
+    <ion-button
+      (click)="volverInicio()"
+      color="secondary"
+      class="animated-btn"
+      expand="block">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      Volver a inicio
+    </ion-button>
+  </div>
+</ion-content>

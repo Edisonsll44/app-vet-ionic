@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Citas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="nuevaCita()">
+        <ion-icon name="add-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let cita of citas">
+    <ion-card [color]="cita.color">
+      <ion-card-header>
+        <ion-card-title>Propietario: {{ cita.cliente.nombre }}</ion-card-title>
+        <ion-card-title>Mascota: {{ cita.mascota.nombre }}</ion-card-title>
+        <ion-card-title>Tipo: {{ cita.mascota.tipo }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p><strong>Teléfono:</strong> {{ cita.cliente.telefono }}</p>
+        <p><strong>Email:</strong> {{ cita.cliente.email }}</p>
+        <p><strong>Edad Mascota:</strong> {{ cita.mascota.edad }}</p>
+        <p><strong>Descripción:</strong> {{ cita.descripcion }}</p>
+        <p><strong>Fecha:</strong> {{ cita.fechaFormateada }}</p>
+        <p><strong>Hora:</strong> {{ cita.horaFormateada }}</p>
+
+        <div *ngIf="mostrarOpciones(cita.fechaHora)" class="btn-group">
+          <ion-button color="primary" (click)="editarCita(cita)" disabled="true">Editar</ion-button>
+          <ion-button color="danger" (click)="cancelarCita(cita)" disabled="true">Cancelar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

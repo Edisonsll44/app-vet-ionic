@@ -1,0 +1,59 @@
+ion-content {
+  --background: var(--ion-color-dark);
+  background: var(--ion-color-dark);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--ion-color-dark-shade);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.animated-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.animated-btn:hover {
+  transform: scale(1.05);
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+ion-card-subtitle {
+  color: #cccccc;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+ion-card,
+ion-card-header,
+ion-card-content {
+  background: #1e1e1e !important;
+}

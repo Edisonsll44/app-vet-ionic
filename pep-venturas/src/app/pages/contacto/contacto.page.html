@@ -1,0 +1,26 @@
+<ion-content fullscreen color="dark">
+  <div class="contact-container">
+    <ion-card class="contact-card">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Contácte con nosotros</ion-card-title>
+        <ion-card-subtitle class="ion-text-center">¡Estamos para ayudarte!</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div class="actions">
+          <ion-button expand="block" (click)="callPhone()" class="animated-btn">
+            📞 Llamar
+          </ion-button>
+
+          <ion-button expand="block" color="success" (click)="openWhatsApp()" class="animated-btn">
+            💬 WhatsApp
+          </ion-button>
+
+          <ion-button expand="block" fill="outline" (click)="openMap()" class="animated-btn">
+            🗺️ Ver en el Mapa
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

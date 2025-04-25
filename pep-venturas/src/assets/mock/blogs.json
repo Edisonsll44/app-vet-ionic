@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "La importancia de las vacunas en perros y gatos",
+    "author": "Dra. Andrea Salazar",
+    "date": "2025-04-01",
+    "image": "assets/img/blog-vacunas.jpg",
+    "excerpt": "Vacunar a nuestras mascotas es clave para prevenir enfermedades comunes y proteger su salud desde temprana edad.",
+    "content": "Las vacunas ayudan a prevenir enfermedades como la rabia, el moquillo y la parvovirosis en perros, así como la leucemia felina en gatos. Es importante seguir un calendario de vacunación establecido por el veterinario..."
+  },
+  {
+    "id": 2,
+    "title": "Alimentos prohibidos para mascotas",
+    "author": "MVZ Carlos Jara",
+    "date": "2025-04-03",
+    "image": "assets/img/blog-alimentos.jpg",
+    "excerpt": "¿Sabías que el chocolate puede ser mortal para los perros? Conoce qué alimentos debes mantener lejos de tus mascotas.",
+    "content": "Entre los alimentos más peligrosos están el chocolate, las uvas, la cebolla, el ajo y los huesos cocidos. Estos pueden provocar intoxicaciones, insuficiencia renal o atragantamientos..."
+  },
+  {
+    "id": 3,
+    "title": "Cómo detectar dolor en tu mascota",
+    "author": "Dra. Mariana Vélez",
+    "date": "2025-04-06",
+    "image": "assets/img/blog-dolor.jpg",
+    "excerpt": "Muchas veces nuestras mascotas no pueden expresar su dolor como lo haríamos nosotros. Aprende a detectar señales.",
+    "content": "Cambios de comportamiento, falta de apetito, gemidos, cojera o aislamiento son signos comunes. Un chequeo veterinario puede ayudarte a identificar la causa y tratarla a tiempo..."
+  },
+  {
+    "id": 4,
+    "title": "Beneficios de esterilizar a tu mascota",
+    "author": "MVZ Pablo Núñez",
+    "date": "2025-04-09",
+    "image": "assets/img/blog-esterilizacion.jpg",
+    "excerpt": "Esterilizar a tu perro o gato no solo evita camadas no deseadas, también puede mejorar su salud y comportamiento.",
+    "content": "La esterilización reduce el riesgo de cáncer mamario en hembras y problemas prostáticos en machos. Además, disminuye el comportamiento territorial y agresivo..."
+  },
+  {
+    "id": 5,
+    "title": "Cuidados básicos del pelaje",
+    "author": "Dra. Silvia López",
+    "date": "2025-04-12",
+    "image": "assets/img/blog-pelaje.jpg",
+    "excerpt": "El pelaje es el espejo de la salud de tu mascota. Aprende cómo mantenerlo limpio, brillante y sin nudos.",
+    "content": "Cepillar el pelaje con frecuencia ayuda a eliminar el pelo muerto y evitar enredos. Un baño cada cierto tiempo con champú adecuado previene infecciones y mantiene la piel sana..."
+  }
+]

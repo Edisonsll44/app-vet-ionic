@@ -1,0 +1,9 @@
+{
+  "phone": "+593987654321",
+  "whatsapp": "+593987654321",
+  "location": {
+    "lat": -1.3969,
+    "lng": -78.4212,
+    "label": "Pep-Venturas"
+  }
+}

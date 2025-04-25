@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva cita</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="crearCita()">
+    <ion-item>
+      <ion-label position="floating">Cliente</ion-label>
+      <ion-input type="text" [(ngModel)]="clienteNombre" name="clienteNombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Celular</ion-label>
+      <ion-input type="tel" [(ngModel)]="clienteTelefono" name="clienteTelefono" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" [(ngModel)]="clienteEmail" name="clienteEmail" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Nombre de la mascota</ion-label>
+      <ion-input type="text" [(ngModel)]="mascotaNombre" name="mascotaNombre" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo de Mascota</ion-label>
+      <ion-select [(ngModel)]="mascotaTipo" name="mascotaTipo" interface="popover" placeholder="Seleccionar tipo" required>
+        <ion-select-option *ngFor="let tipo of tiposMascota" [value]="tipo">{{ tipo }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Edad de la mascota</ion-label>
+      <ion-input type="number" [(ngModel)]="mascotaEdad" name="mascotaEdad" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Síntomas presentados</ion-label>
+      <ion-input type="text" [(ngModel)]="descripcion" name="descripcion" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Seleccione fecha y hora para la cita</ion-label>
+      <ion-datetime [(ngModel)]="fechaHora" name="fechaHora" display-format="YYYY-MM-DDTHH:mm" required></ion-datetime>
+    </ion-item>
+
+    <ion-button expand="full" type="submit" [disabled]="!validarFormulario()">
+      <ion-icon slot="start" name="checkmark-circle-outline"></ion-icon>
+      Crear Cita
+    </ion-button>
+    <ion-button expand="full" fill="solid" color="danger" (click)="cancelar()">
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
+      Cancelar
+    </ion-button>
+  </form>
+</ion-content>
